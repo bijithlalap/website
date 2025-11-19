@@ -64,3 +64,18 @@ footer {
         font-size: 40px;
     }
 }
+.whatsapp-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #25D366;   /* WhatsApp green */
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.whatsapp-btn:hover {
+    opacity: 0.9;
+}
+
