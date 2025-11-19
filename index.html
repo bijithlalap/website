@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Contact Page</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Contact</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Meiso Icecreams</h1>
-    <p>📞 +91 6262404504</p>
-  </div>
+    <header>
+        <h1>Your Name</h1>
+        <p class="tagline">Simple • Clean • Modern Contact Page</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Contact Information</h2>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+                <li><strong>Phone:</strong> +1 234 567 890</li>
+                <li><strong>Location:</strong> Your City, Country</li>
+                <li><strong>Website:</strong> <a href="#">yourwebsite.com</a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                Write a short description about yourself here. This can be 1–2 lines:
+                who you are, what you do, or what this page is for.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Your Name — All rights reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
