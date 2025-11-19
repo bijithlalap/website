@@ -1,81 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #eef6ff;
-}
-
-/* Header */
-header {
-    text-align: center;
-    padding: 20px;
-    background: #0d6efd;
-    color: white;
-}
-
-.tagline {
-    font-size: 14px;
-    opacity: 0.9;
-}
-
-/* Hero Section */
-.hero {
-    padding: 60px 15px;
-    text-align: center;
-    background: white;
-    color: #0d6efd;
-}
-
-.hero h2 {
-    font-size: 28px;
+/* Brand Logo */
+.brand-logo {
+    width: 80px;
+    height: auto;
     margin-bottom: 10px;
 }
 
-/* Content Section */
-.content {
-    padding: 30px;
-    text-align: center;
-}
-
-.content h2 {
-    color: #0d6efd;
-    margin-bottom: 15px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #0d6efd;
-    color: white;
+/* Hero Image Gallery */
+.hero-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     margin-top: 20px;
 }
 
+.hero-gallery img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
 /* Responsive */
-@media (min-width: 700px) {
-    .hero h2 {
-        font-size: 36px;
+@media (max-width: 600px) {
+    .hero-gallery {
+        flex-wrap: wrap;
     }
-    header h1 {
-        font-size: 40px;
+    .hero-gallery img {
+        width: 70px;
+        height: 70px;
     }
 }
-.whatsapp-btn {
-    display: inline-block;
-    padding: 12px 20px;
-    background: #25D366;   /* WhatsApp green */
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.whatsapp-btn:hover {
-    opacity: 0.9;
-}
-
