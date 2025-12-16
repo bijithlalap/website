@@ -1,12 +1,31 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   FIXED LOGO (TOP LEFT)
+========================= */
 .logo-fixed {
     position: fixed;
-    top: 20px;
-    left: 24px;
+    top: 18px;
+    left: 22px;
     z-index: 1000;
 }
 
 .logo-fixed img {
-    width: 95px;        /* desktop size */
+    width: 95px;              /* Desktop */
     height: auto;
 }
 
@@ -26,5 +45,152 @@
 
     .logo-fixed img {
         width: 60px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 6px;
+        border-radius: 10px;
     }
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 130px 10% 70px;   /* space for logo */
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 42px;
+    color: #0d6efd;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+
+/* Mobile Hero */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 110px 8% 50px;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
+    }
+}
+
+/* =========================
+   FLAVOURS SECTION
+========================= */
+.flavours {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.flavours h2 {
+    font-size: 32px;
+    color: #0d6efd;
+    margin-bottom: 35px;
+}
+
+.flavour-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.flavour-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   GALLERY SECTION
+========================= */
+.gallery {
+    padding: 70px 10%;
+    background: #f7faff;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 30px;
+    color: #0d6efd;
+    margin-bottom: 35px;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.gallery-row img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 18px;
+    background: #25D366;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
 }
