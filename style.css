@@ -216,6 +216,31 @@ footer {
     border-radius: 50%;
     margin-bottom: 15px;
 }
+.gallery {
+    padding: 50px 10%;
+    background: #f7faff;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #0d6efd;
+    margin-bottom: 25px;
+}
+
+.gallery-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-row img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
 
 .flavour-card h3 {
     color: #333;
