@@ -137,13 +137,20 @@
     z-index: 1000;
 }
 
+.logo-fixed {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+}
+
 .logo-fixed img {
-    width: 80px;   /* ideal size */
+    width: 70px;
     height: auto;
 }
+
 @media (max-width: 768px) {
     .logo-fixed img {
         width: 60px;
     }
 }
-
