@@ -180,3 +180,44 @@ footer {
 .wa-icon {
     width: 55px;
 }
+.flavours {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.flavours h2 {
+    font-size: 32px;
+    color: #0d6efd;
+    margin-bottom: 30px;
+}
+
+.flavour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.flavour-card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.flavour-card:hover {
+    transform: translateY(-8px);
+}
+
+.flavour-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.flavour-card h3 {
+    color: #333;
+}
+
