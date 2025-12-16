@@ -165,7 +165,7 @@ body {
 }
 
 .gallery h2 {
-    font-size: 30px;
+    font-size: 32px;
     color: #0d6efd;
     margin-bottom: 35px;
 }
@@ -177,13 +177,45 @@ body {
     flex-wrap: wrap;
 }
 
-.gallery-row img {
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+.gallery-card img {
     width: 260px;
     height: 260px;
     object-fit: cover;
     border-radius: 22px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
+
+.gallery-caption {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+    .gallery-card img {
+        width: 200px;
+        height: 200px;
+    }
+    .gallery-caption {
+        font-size: 14px;
+    }
+}
+
 
 /* =========================
    CONTACT SECTION
