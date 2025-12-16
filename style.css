@@ -130,3 +130,14 @@
     background: #0d6efd;
     color: white;
 }
+.logo-fixed {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.logo-fixed img {
+    width: 110px;   /* adjust if needed */
+    height: auto;
+}
