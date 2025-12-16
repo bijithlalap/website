@@ -9,13 +9,13 @@
 }
 
 body {
-    background: #ffffff;
+    background: #fff;
     color: #333;
     line-height: 1.6;
 }
 
 /* =========================
-   FIXED LOGO (TOP LEFT)
+   FIXED LOGO TOP-LEFT
 ========================= */
 .logo-fixed {
     position: fixed;
@@ -25,18 +25,16 @@ body {
 }
 
 .logo-fixed img {
-    width: 95px;              /* Desktop */
+    width: 95px;
     height: auto;
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
     .logo-fixed img {
         width: 80px;
     }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     .logo-fixed {
         top: 12px;
@@ -45,7 +43,7 @@ body {
 
     .logo-fixed img {
         width: 60px;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255,255,255,0.9);
         padding: 6px;
         border-radius: 10px;
     }
@@ -58,7 +56,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 130px 10% 70px;   /* space for logo */
+    padding: 130px 10% 70px;
     gap: 50px;
 }
 
@@ -75,6 +73,17 @@ body {
 .hero-text p {
     font-size: 18px;
     color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .hero-image {
@@ -88,7 +97,6 @@ body {
     height: auto;
 }
 
-/* Mobile Hero */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -122,12 +130,29 @@ body {
     flex-wrap: wrap;
 }
 
-.flavour-grid img {
-    width: 200px;
-    height: 200px;
+.flavour-card {
+    background: white;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.flavour-card:hover {
+    transform: translateY(-8px);
+}
+
+.flavour-card img {
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    margin-bottom: 12px;
+}
+
+.flavour-card h3 {
+    color: #333;
 }
 
 /* =========================
