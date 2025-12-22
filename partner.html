@@ -152,19 +152,38 @@
             </div>
         </div>
 
-        <div class="form-section">
-            <h2 style="text-align:center;">Franchise Enquiry Form</h2>
-            <p style="text-align:center;">Fill out the form below and our team will contact you within 24 hours.</p>
-            
-            <form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="8be11681-6556-4a14-9761-de3ec18e4a4b">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Submit</button>
-</form>
+       <div class="form-section">
+    <h2 style="text-align:center;">Franchise & Distribution Enquiry</h2>
+    <p style="text-align:center;">Fill out the form below and our team will contact you within 24 hours.</p>
+    
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="8be11681-6556-4a14-9761-de3ec18e4a4b">
+        
+        <input type="hidden" name="subject" value="New Meiso Franchise Enquiry">
+
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        
+        <div style="display: flex; gap: 10px;">
+            <input type="tel" name="phone" placeholder="Phone Number" required style="flex: 1;">
+            <input type="email" name="email" placeholder="Email Address" required style="flex: 1;">
         </div>
-    </div>
+
+        <select name="interest_type" required>
+            <option value="" disabled selected>Select Interest Type</option>
+            <option value="Distributorship">Distributorship</option>
+            <option value="Franchise Parlor">Franchise Parlor</option>
+            <option value="Event Catering">Event/Wedding Supply</option>
+        </select>
+
+        <input type="text" name="location" placeholder="Preferred Location / City" required>
+        
+        <textarea name="message" rows="4" placeholder="Tell us about your business experience (Optional)"></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+    </form>
+</div>
 
     <footer>
         <p>&copy; 2025 Meiso Ice Cream. Naduvannur, Kozhikode, Kerala.</p>
