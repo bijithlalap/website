@@ -3,118 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Meiso | Premium Ice Cream & Popsicles in Kozhikode, Kerala</title>
-    <meta name="description" content="Experience the real taste of fruit with Meiso Ice Cream. 50+ flavors of premium ice cream and popsicles manufactured in Naduvannur. Franchise and distribution open across Kerala.">
-    <meta name="keywords" content="Meiso ice cream, best ice cream in Kozhikode, popsicle manufacturer Kerala, ice cream franchise Kerala, Naduvannur food business">
+    <meta name="keywords" content="ice cream, popsicles, dessert Kozhikode, Meiso, food franchise">
+    <title>Meiso Icecreams</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- FIXED LOGO TOP-LEFT -->
+<div class="logo-fixed">
+    <img src="logo.png" alt="Meiso Icecreams Logo">
+</div>
 
-    <style>
-        :root {
-            --primary: #ff477e; /* Ice Cream Pink */
-            --secondary: #00b4d8; /* Cool Blue */
-            --dark: #2b2d42;
-            --light: #f8f9fa;
-        }
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Premium Icecreams Made in Kerala</h2>
+        <p>A Sweet Inner Fall</p>
+        <a href="https://wa.link/gbpyvw" class="hero-btn" target="_blank">Order on WhatsApp</a>
+    </div>
+    <div class="hero-image">
+        <img src="hero-scoops.png" alt="Icecream Scoops">
+    </div>
+</section>
 
-        * { box-sizing: border-box; }
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            color: var(--dark);
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
+<!-- FLAVOURS SECTION -->
+<section class="flavours">
+    <h2>Our Popular Flavours</h2>
+    <div class="flavour-grid">
+        <div class="flavour-card">
+            <img src="flavour1.png" alt="Strawberry Bliss">
+            <h3>Malabar Delight</h3>
+        </div>
+        <div class="flavour-card">
+            <img src="flavour2.png" alt="Chocolate Delight">
+            <h3>Chocolate Saga</h3>
+        </div>
+        <div class="flavour-card">
+            <img src="flavour3.png" alt="Classic Vanilla">
+            <h3>Jackfruit Jelly</h3>
+        </div>
+    </div>
+</section>
 
-        /* --- Header & Navigation --- */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 5%;
-            background: #fff;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+<!-- SCOOP GALLERY -->
+<section class="gallery">
+    <h2>Freshly Crafted</h2>
+    <div class="gallery-row">
 
-        .logo {
-            font-size: 26px;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-            letter-spacing: 1px;
-        }
+        <div class="gallery-card">
+            <img src="scoop1.jpg" alt="Scoop 1">
+            <p class="gallery-caption">Multi Tones</p>
+        </div>
 
-        .nav-btn {
-            background: var(--primary);
-            color: white;
-            padding: 10px 22px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            transition: 0.3s;
-        }
+        <div class="gallery-card">
+            <img src="scoop2.jpg" alt="Scoop 2">
+            <p class="gallery-caption"><b></b>Meiso Rizz</b></p>
+            <p class="gallery-caption">A smooth, rich blend crafted for everyday indulgence.</p>
+        </div>
 
-        .nav-btn:hover { background: var(--secondary); transform: scale(1.05); }
+        <div class="gallery-card">
+            <img src="scoop3.jpg" alt="Scoop 3">
+            <p class="gallery-caption">Multi Scoops</p>
+        </div>
 
-        /* --- Hero Section --- */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
-        }
+    </div>
+</section>
 
-        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; }
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +91 6262404504</p>
+    <a href="https://meiso.in/partner.html" target="_blank" class="whatsapp-btn">Join our Dealer Network</a>
+</section>
 
-        /* --- Sections --- */
-        .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; }
-        .section-title { text-align: center; margin-bottom: 50px; }
-        .section-title h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; }
+<!-- FOOTER -->
+<footer class="footer">
+    © 2025 Meiso Icecreams · Kerala, India
+</footer>
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.link/gbpyvw" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+</a>
 
-        .card {
-            background: #fff;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            text-align: center;
-            padding-bottom: 30px;
-            transition: 0.3s;
-        }
-
-        .card:hover { transform: translateY(-10px); }
-        .card img { width: 100%; height: 250px; object-fit: cover; }
-        .card h3 { margin: 20px 0 10px; color: var(--secondary); }
-
-        /* --- Franchise CTA Section --- */
-        .franchise-cta {
-            background: var(--light);
-            padding: 60px 20px;
-            text-align: center;
-            border-radius: 30px;
-            margin: 40px 20px;
-        }
-
-        .franchise-cta h2 { color: var(--primary); }
-        .btn-large {
-            display: inline-block;
-            margin-top: 20px;
+</body>
+</html>
