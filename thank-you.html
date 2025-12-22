@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You | Meiso Ice Cream</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
         :root {
             --primary-color: #ff477e;
             --secondary-color: #00b4d8;
+            --whatsapp-green: #25D366;
             --dark-text: #2b2d42;
         }
         body {
@@ -17,10 +20,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
             background-color: #f8f9fa;
             color: var(--dark-text);
+            padding: 20px;
         }
         .container {
             padding: 40px;
@@ -28,33 +32,71 @@
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             max-width: 500px;
+            width: 100%;
         }
-        .icon {
+        .icon-success {
             font-size: 60px;
-            color: #4bb543; /* Success Green */
+            color: #4bb543;
             margin-bottom: 20px;
         }
         h1 { color: var(--primary-color); margin-bottom: 10px; }
-        p { margin-bottom: 30px; color: #666; }
+        p { margin-bottom: 25px; color: #666; }
+        
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
         .btn {
-            background: var(--secondary-color);
-            color: white;
-            padding: 12px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 25px;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: 600;
             transition: 0.3s;
         }
-        .btn:hover { background: #0096b4; }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: white;
+            font-size: 1.1rem;
+        }
+        .btn-whatsapp:hover { background-color: #1ebe57; transform: scale(1.02); }
+
+        .btn-home {
+            background-color: #eee;
+            color: var(--dark-text);
+        }
+        .btn-home:hover { background-color: #ddd; }
+        
+        .urgency-text {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="icon">✓</div>
-        <h1>Thank You!</h1>
-        <p>We've received your enquiry. Our team will review it and get back to you via phone or email within 24 hours.</p>
-        <a href="index.html" class="btn">Back to Home</a>
+        <div class="icon-success">✓</div>
+        <h1>Enquiry Received!</h1>
+        <p>We've sent your details to our team. You should hear from us within 24 hours.</p>
+        
+        <div class="button-group">
+            <div class="urgency-text">Need an instant response?</div>
+            <a href="https://wa.me/916262404504?text=Hi Meiso, I just submitted a franchise enquiry and would like to get more details." 
+               class="btn btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            
+            <a href="index.html" class="btn btn-home">Back to Homepage</a>
+        </div>
     </div>
 
 </body>
