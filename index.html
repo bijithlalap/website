@@ -139,6 +139,8 @@
         </p>
     </div>
 </section>
+
+    
     
 <footer class="footer" style="padding: 30px; background: #f9f9f9; text-align: center; border-top: 1px solid #eee;">
     <div style="margin-bottom: 15px;">
@@ -154,6 +156,35 @@
 <a href="https://wa.link/gbpyvw" target="_blank" class="whatsapp-float">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
 </a>
+
+    <div class="faq-container">
+  <h2 style="font-size: 22px; margin-bottom: 15px;">People also ask</h2>
+  
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFAQ(this)">
+      What services does Meiso provide?
+      <span class="icon">▼</span>
+    </button>
+    <div class="faq-answer" style="display:none; padding: 10px 0;">
+      <p>Meiso provides premium digital solutions and creative design services.</p>
+    </div>
+  </div>
+  
+  </div>
+
+<script>
+function toggleFAQ(element) {
+  const answer = element.nextElementSibling;
+  const icon = element.querySelector('.icon');
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+    icon.style.transform = "rotate(0deg)";
+  } else {
+    answer.style.display = "block";
+    icon.style.transform = "rotate(180deg)";
+  }
+}
+</script>
 
 </body>
 </html>
