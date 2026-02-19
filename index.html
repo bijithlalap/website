@@ -139,6 +139,45 @@
         </p>
     </div>
 </section>
+    <section style="max-width: 900px; margin: 50px auto; padding: 20px; font-family: 'Helvetica Neue', sans-serif;">
+  <h2 style="text-align: center; color: #333; margin-bottom: 30px;">People also ask</h2>
+  
+  <div class="faq-accordion">
+    <div class="faq-item" style="border-bottom: 1px solid #eee;">
+      <button class="faq-btn" onclick="toggleFaq(this)" style="width:100%; padding:18px; background:none; border:none; text-align:left; font-size:18px; font-weight:600; cursor:pointer; display:flex; justify-content:space-between;">
+        What makes Meiso Ice Creams unique?
+        <span>+</span>
+      </button>
+      <div class="faq-content" style="display:none; padding: 0 18px 18px; color: #666; line-height: 1.6;">
+        Meiso focuses on authentic Kerala flavors, using locally sourced ingredients like Jackfruit and Malabar spices, crafted with world-class hygienic standards.
+      </div>
+    </div>
+
+    <div class="faq-item" style="border-bottom: 1px solid #eee;">
+      <button class="faq-btn" onclick="toggleFaq(this)" style="width:100%; padding:18px; background:none; border:none; text-align:left; font-size:18px; font-weight:600; cursor:pointer; display:flex; justify-content:space-between;">
+        Where can I buy Meiso Ice Cream?
+        <span>+</span>
+      </button>
+      <div class="faq-content" style="display:none; padding: 0 18px 18px; color: #666; line-height: 1.6;">
+        We are expanding across Kerala and Tamil Nadu. You can find us at authorized distributors or order directly via our WhatsApp link on the homepage.
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleFaq(btn) {
+  const content = btn.nextElementSibling;
+  const span = btn.querySelector('span');
+  if (content.style.display === "block") {
+    content.style.display = "none";
+    span.innerHTML = "+";
+  } else {
+    content.style.display = "block";
+    span.innerHTML = "−";
+  }
+}
+</script>
     
 <footer class="footer" style="padding: 30px; background: #f9f9f9; text-align: center; border-top: 1px solid #eee;">
     <div style="margin-bottom: 15px;">
